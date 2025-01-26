@@ -1,0 +1,99 @@
+.project-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #666;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.back-button:hover {
+  color: #333;
+}
+
+.project-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.project-media {
+  margin-bottom: 3rem;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.project-info {
+  margin-top: 3rem;
+}
+
+.project-info section {
+  margin-bottom: 2rem;
+}
+
+.project-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.features ul, .technical-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li, .technical-details li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.features li:before, .technical-details li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #646cff;
+} 
